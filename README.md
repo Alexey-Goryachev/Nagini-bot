@@ -69,5 +69,5 @@ To exit the Notebook to the Personal assistant bot main menu, enter "Exit"
   
   Linux: /home/Username/Documents/My_folder
   
-  To exit the Assistant bot, enter "Exit”
+  To exit the Assistant bot, enter "Exit"
   To exit the Sort to the Personal assistant bot main menu, enter "Exit"
