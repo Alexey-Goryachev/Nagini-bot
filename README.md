@@ -3,6 +3,9 @@ Personal assistant bot
 
 Hello, welcome to the Personal Assistant bot. This is one of my first team works. Created with my colleagues, a small development team "Nagini"
 
+My work, files: main.py , start_and_help.py, main_code_bot.py, my_classes.py, and integration into a single work product of all files.
+Also, you can download the python package from  https://test.pypi.org/project/nagini-bot  and after installation use it anywhere on your system using the 'nagini-bot' command
+
 The personal assistant console program can implement the following functionality:
 
 1. Contact book
