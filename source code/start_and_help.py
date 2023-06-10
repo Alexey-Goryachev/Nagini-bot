@@ -64,14 +64,14 @@ def start_bot():
                     user_input = input(
                         "\nThis menu contact_ book, please enter your choice or 'help' to view a list of commands or 'exit' for return to the main menu: ")
                     if user_input.lower().strip() == 'help':
-                        while user_input == 'help':
+                        while user_input.lower().strip() == 'help':
                             contact_book_help()
                             user_input = input(
                                 "\nPlease enter your choice or 'help' to view a list of commands: ")
                     if user_input.lower().strip() == 'exit':
                         break
-                    if user_input in command_func:
-                        main(user_input)
+                    if user_input.lower().strip() in command_func:
+                        main(user_input.lower().strip())
                     if user_input:
                         continue
                 user_input = input(
@@ -83,13 +83,13 @@ def start_bot():
                     user_input = input(
                         "\nThis menu notebook, please enter your choice or 'help' to view a list of commands or 'exit' for return to the main menu: ")
                     if user_input.lower().strip() == 'help':
-                        while user_input == 'help':
+                        while user_input.lower().strip() == 'help':
                             notebook_help()
                             user_input = input(
                                 "\nPlease enter your choice or 'help' to view a list of commands: ")
                     if user_input.lower().strip() == 'exit':
                         break
-                    if user_input in command_list:
+                    if user_input.lower().strip() in command_list:
                         run_command(user_input)
                     if user_input:
                         continue
