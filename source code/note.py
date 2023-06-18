@@ -27,7 +27,7 @@ class Note:
 
 # забезпечує коректну серіалізацію об'єкту Note до формату JSON.
     @staticmethod
-    def default(obj):
+    def default(self, obj):
         if isinstance(obj, Note):
             return {
                 'note': obj.note,
@@ -184,8 +184,6 @@ class NoteManager:
             print("No notes found for sorting")
 
 # Функція для запуску
-
-
 def run_command(command):
     if command == 'add':
         note = input("Enter the note: ")
@@ -224,6 +222,3 @@ def run_command(command):
 
 note_manager = NoteManager()
 
-# список команд бота
-command_list = ['add', 'search', 'search-all', 'edit-index', 'edit-keyword',
-                'delete-index', 'delete-keyword', 'sort', 'exit']

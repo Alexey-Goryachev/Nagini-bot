@@ -252,10 +252,10 @@ def main(user_input):
         while True:
             try:
                 if user_input.lower().strip() in finish:
-                    user_input_parser = parcer('exit')
-                    command, arg = user_input_parser
-                    print(command(*arg))
-                    break
+                    if user_input.lower().strip() == 'exit':
+                        return f'exit'
+                    else:
+                        return f'help'
                 elif user_input.lower().strip() == 'show all':
                     print(show_contacts())
                     user_input = input()
